@@ -1,0 +1,43 @@
+Nama	: Kevin Erfian Pratama Putra
+NIM	: 224308086
+Kelas	:TKA-7D
+
+Analisis dan Diskusi
+
+Minggu 2
+
+Analisis
+
+1. Bagaimana performa model dalam mendeteksi warna?
+   Kinerja model dalam mendeteksi warna sangat dipengaruhi oleh kualitas serta keragaman dataset (color.csv). Algoritma K-Nearest Neighbors (KNN) menggunakan nilai RGB untuk mengklasifikasikan warna. Jika dataset memiliki distribusi yang seimbang dan variatif, akurasi deteksi akan tinggi. Sebaliknya, dataset yang terbatas atau tidak merata akan menurunkan performa. Evaluasi yang lebih objektif dapat dilakukan dengan metrik seperti akurasi, presisi, recall, dan F1-score melalui perbandingan prediksi model dengan label sebenarnya.
+
+2. Bagaimana perbedaan akurasi jika jumlah dataset ditambah?
+   Penambahan data umumnya meningkatkan akurasi, terutama jika memperkaya variasi warna dan menyediakan lebih banyak contoh. Hal ini membantu model mengenali pola warna yang lebih kompleks. Namun, apabila data tambahan mengandung banyak noise, akurasi justru bisa menurun.
+
+3. Bagaimana cara meningkatkan kinerja model klasifikasi?
+   Beberapa upaya yang dapat dilakukan antara lain:
+  > Hyperparameter tuning: menguji berbagai nilai k pada KNN untuk menemukan parameter optimal.
+
+  > Eksperimen algoritma lain: menggunakan algoritma lain seperti Random Forest atau SVM untuk hasil klasifikasi yang lebih baik.
+
+  > Feature engineering: menambahkan fitur lain seperti HSV atau LAB yang lebih representatif daripada hanya RGB.
+
+  > Cross-validation: menerapkan validasi silang untuk mengurangi risiko overfitting dan memperoleh evaluasi performa yang lebih akurat.
+
+Diskusi
+
+1. Apa keuntungan Machine Learning dibandingkan metode berbasis aturan (rule-based)?
+   Machine Learning lebih fleksibel karena tidak membutuhkan penulisan aturan manual. Model mampu belajar dari data, menemukan pola yang sulit diidentifikasi manusia, serta beradaptasi dengan data baru. Seiring pertambahan data, akurasinya cenderung meningkat, berbeda dengan sistem berbasis aturan yang sulit menyesuaikan tanpa modifikasi manual.
+
+2. Bagaimana ML dapat diintegrasikan lebih lanjut dalam sistem kendali?
+   Machine Learning dapat memperkuat sistem kendali dengan meningkatkan efisiensi dan kemampuan adaptasi. Misalnya, dalam otomasi, ML dapat mendeteksi objek secara real-time melalui kamera dan mengirimkan perintah ke aktuator untuk mengambil keputusan otomatis. Selain itu, ML juga dapat dimanfaatkan untuk prediksi kondisi sistem serta optimasi parameter kendali sesuai perubahan lingkungan.
+
+3. Apa saja tantangan dalam penerapan ML pada sistem real-time?
+   Beberapa tantangan utama antara lain:
+  > Keterlambatan dalam pengambilan keputusan.
+
+  > Keterbatasan perangkat keras (CPU, GPU, memori), terutama pada sistem embedded.
+
+  > Ketergantungan pada data sensor yang rentan terhadap gangguan lingkungan dan noise.
+
+  > Risiko overfitting jika model tidak diperbarui secara berkala dengan dataset yang beragam.
